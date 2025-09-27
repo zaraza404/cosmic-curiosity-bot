@@ -12,25 +12,24 @@ const Hero = () => {
       
       <div className="relative z-10 container mx-auto px-6 text-center">
         <h1 className="text-5xl md:text-7xl font-bold mb-6 text-glow animate-fade-in">
-          Explore the{" "}
+          Meet Real{" "}
           <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-            Universe
+            Astronomers
           </span>
         </h1>
         
         <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto animate-fade-in">
-          Journey through the cosmos and discover the wonders of space exploration. 
-          From distant galaxies to the secrets of our solar system, unlock the mysteries 
-          that have captivated humanity for millennia.
+          Join intimate live sessions with professional astronomers. Ask questions, explore fascinating space topics, 
+          and get expert insights in small groups of fellow space enthusiasts.
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-in">
           <Button className="btn-cosmic text-lg px-8 py-4">
-            Begin Your Journey
+            Book a Session
           </Button>
           
           <Button variant="outline" className="border-primary/50 text-foreground hover:bg-primary/10 text-lg px-8 py-4">
-            Watch Mission Videos
+            Meet an Astronomer
           </Button>
         </div>
       </div>

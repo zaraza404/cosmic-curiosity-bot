@@ -3,31 +3,31 @@ import { Button } from "@/components/ui/button";
 import { Eye, Users, GraduationCap, Calendar } from "lucide-react";
 import stargazingImage from "@/assets/stargazing-community.jpg";
 
-const GetInvolved = () => {
-  const activities = [
+const UpcomingSessions = () => {
+  const sessions = [
     {
       icon: <Eye className="w-8 h-8 text-primary" />,
-      title: "Stargazing Events",
-      description: "Join local astronomy clubs for guided stargazing sessions and telescope viewing parties.",
-      action: "Find Events Near You"
+      title: "Black Holes Unveiled",
+      description: "Explore the mysterious nature of black holes, recent discoveries from the Event Horizon Telescope, and what happens at the event horizon.",
+      action: "Book Session - Nov 15"
     },
     {
       icon: <Users className="w-8 h-8 text-secondary" />,
-      title: "Astronomy Communities",
-      description: "Connect with fellow space enthusiasts, share observations, and learn from experienced astronomers.",
-      action: "Join Community"
+      title: "Mars Exploration",
+      description: "Join a NASA Mars scientist to discuss Perseverance rover findings, future missions, and the search for ancient life.",
+      action: "Book Session - Nov 18"
     },
     {
       icon: <GraduationCap className="w-8 h-8 text-accent" />,
-      title: "Educational Resources",
-      description: "Access online courses, documentaries, and interactive tools to deepen your space knowledge.",
-      action: "Start Learning"
+      title: "Exoplanet Hunters",
+      description: "Discover how astronomers find planets around other stars and learn about potentially habitable worlds.",
+      action: "Book Session - Nov 22"
     },
     {
       icon: <Calendar className="w-8 h-8 text-primary" />,
-      title: "Space Mission Updates",
-      description: "Stay informed about the latest space missions, discoveries, and astronomical events.",
-      action: "Subscribe to Updates"
+      title: "James Webb Discoveries",
+      description: "See the latest stunning images and groundbreaking discoveries from humanity's most powerful space telescope.",
+      action: "Book Session - Nov 25"
     }
   ];
 
@@ -36,14 +36,14 @@ const GetInvolved = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-glow">
-            Get{" "}
+            Upcoming{" "}
             <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-              Involved
+              Sessions
             </span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Whether you're a curious beginner or an experienced stargazer, there are countless ways 
-            to explore the universe and connect with the astronomy community.
+            Join our expert astronomers for fascinating deep-dives into the most exciting topics in space science. 
+            Each session features a presentation followed by live Q&A.
           </p>
         </div>
 
@@ -58,18 +58,18 @@ const GetInvolved = () => {
           </div>
 
           <div className="grid gap-6">
-            {activities.map((activity, index) => (
+            {sessions.map((session, index) => (
               <Card key={index} className="card-cosmic animate-fade-in" style={{ animationDelay: `${index * 0.1}s` }}>
                 <CardHeader className="pb-3">
                   <div className="flex items-center gap-3 mb-2">
-                    {activity.icon}
-                    <CardTitle className="text-xl">{activity.title}</CardTitle>
+                    {session.icon}
+                    <CardTitle className="text-xl">{session.title}</CardTitle>
                   </div>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-muted-foreground mb-4">{activity.description}</p>
-                  <Button variant="outline" className="border-primary/50 hover:bg-primary/10">
-                    {activity.action}
+                  <p className="text-muted-foreground mb-4">{session.description}</p>
+                  <Button className="btn-cosmic">
+                    {session.action}
                   </Button>
                 </CardContent>
               </Card>
@@ -81,4 +81,4 @@ const GetInvolved = () => {
   );
 };
 
-export default GetInvolved;
+export default UpcomingSessions;

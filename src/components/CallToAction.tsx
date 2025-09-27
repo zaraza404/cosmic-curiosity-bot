@@ -30,12 +30,12 @@ const CallToAction = () => {
             <h2 className="text-4xl md:text-6xl font-bold mb-6 text-glow">
               Ready to{" "}
               <span className="bg-gradient-to-r from-accent to-primary bg-clip-text text-transparent">
-                Explore?
+                Book?
               </span>
             </h2>
             <p className="text-xl md:text-2xl text-muted-foreground mb-8">
-              Join thousands of space enthusiasts and stay updated with the latest discoveries, 
-              missions, and events in astronomy and space exploration.
+              Join your first live session with a professional astronomer. Ask questions, explore the cosmos, 
+              and connect with fellow space enthusiasts in an intimate, interactive setting.
             </p>
           </div>
 
@@ -53,17 +53,17 @@ const CallToAction = () => {
                 />
               </div>
               <Button type="submit" className="btn-cosmic px-8">
-                Launch
+                Get Updates
               </Button>
             </div>
           </form>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Button variant="outline" className="border-accent/50 text-foreground hover:bg-accent/10 px-8 py-3">
-              View Mission Gallery
+            <Button className="btn-cosmic px-8 py-3">
+              Book Your First Session
             </Button>
             <Button variant="outline" className="border-secondary/50 text-foreground hover:bg-secondary/10 px-8 py-3">
-              Download Star Maps
+              Browse All Sessions
             </Button>
           </div>
 

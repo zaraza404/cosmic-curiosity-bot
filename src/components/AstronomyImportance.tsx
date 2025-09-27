@@ -2,27 +2,27 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Telescope, BookOpen, Lightbulb, Globe } from "lucide-react";
 import astronomyImage from "@/assets/astronomy-education.jpg";
 
-const AstronomyImportance = () => {
+const WhySpecial = () => {
   const features = [
     {
       icon: <Telescope className="w-8 h-8 text-primary" />,
-      title: "Scientific Discovery",
-      description: "Astronomy drives technological innovation and helps us understand fundamental physics, leading to breakthroughs that benefit all of humanity."
+      title: "Real Experts",
+      description: "Learn directly from professional astronomers, astrophysicists, and researchers actively working in the field."
     },
     {
       icon: <BookOpen className="w-8 h-8 text-secondary" />,
-      title: "Education & Inspiration",
-      description: "Space exploration inspires students to pursue STEM careers and provides context for understanding our place in the universe."
+      title: "Interactive Experience",
+      description: "Ask questions, participate in discussions, and get personalized answers to your space curiosities."
     },
     {
       icon: <Lightbulb className="w-8 h-8 text-accent" />,
-      title: "Innovation Catalyst",
-      description: "From GPS to medical imaging, astronomical research has led to countless technologies we use in everyday life."
+      title: "Unique Topics",
+      description: "Explore cutting-edge discoveries, behind-the-scenes mission details, and fascinating cosmic phenomena."
     },
     {
       icon: <Globe className="w-8 h-8 text-primary" />,
-      title: "Global Perspective",
-      description: "Astronomy unites humanity by showing us our shared cosmic heritage and the preciousness of our planet Earth."
+      title: "Small Groups",
+      description: "Intimate sessions with only 8-12 participants ensure everyone gets personal attention and meaningful interaction."
     }
   ];
 
@@ -32,16 +32,15 @@ const AstronomyImportance = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div>
             <h2 className="text-4xl md:text-5xl font-bold mb-6 text-glow">
-              Why Astronomy{" "}
+              Why Our Sessions Are{" "}
               <span className="bg-gradient-to-r from-secondary to-accent bg-clip-text text-transparent">
-                Matters
+                Special
               </span>
             </h2>
             
             <p className="text-lg text-muted-foreground mb-8">
-              Astronomy is more than just looking at stars. It's about understanding our universe, 
-              pushing the boundaries of human knowledge, and inspiring the next generation of explorers 
-              and scientists who will shape our future.
+              Unlike YouTube videos or documentaries, our live sessions offer direct access to working astronomers. 
+              Get your questions answered, explore the latest discoveries, and join a community of passionate space enthusiasts.
             </p>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -75,4 +74,4 @@ const AstronomyImportance = () => {
   );
 };
 
-export default AstronomyImportance;
+export default WhySpecial;
