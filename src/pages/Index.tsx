@@ -11,7 +11,6 @@ const Index = () => {
       <AstronomyImportance />
       <GetInvolved />
       <CallToAction />
-      <RetellChatbot />
     </div>
   );
 };
