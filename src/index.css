@@ -139,18 +139,41 @@
 }
 
 @layer components {
+  /* Custom shadow utilities */
+  .shadow-cosmic {
+    box-shadow: var(--shadow-cosmic);
+  }
+  
+  .shadow-nebula {
+    box-shadow: var(--shadow-nebula);
+  }
+  
+  .glow-accent {
+    box-shadow: var(--glow-accent);
+  }
+
   /* Hero button variant */
   .btn-cosmic {
     @apply bg-gradient-to-r from-primary to-accent text-primary-foreground 
-           font-semibold px-8 py-4 rounded-xl shadow-cosmic 
-           hover:shadow-nebula transition-all duration-300 
+           font-semibold px-8 py-4 rounded-xl 
            hover:scale-105 active:scale-95;
+    box-shadow: var(--shadow-cosmic);
+    transition: var(--transition-cosmic);
+  }
+  
+  .btn-cosmic:hover {
+    box-shadow: var(--shadow-nebula);
   }
   
   /* Card with cosmic glow */
   .card-cosmic {
     @apply bg-card/90 backdrop-blur-sm border border-border/50 
-           rounded-2xl p-6 hover:shadow-cosmic transition-all duration-300;
+           rounded-2xl p-6 transition-all duration-300;
+    box-shadow: var(--shadow-cosmic);
+  }
+  
+  .card-cosmic:hover {
+    box-shadow: var(--shadow-cosmic);
   }
   
   /* Text glow effect */
