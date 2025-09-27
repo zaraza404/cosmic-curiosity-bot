@@ -2,85 +2,84 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Cosmic Design System - Dark space theme for astronomy exploration */
+/* Apple-inspired Design System - Clean, minimal, futuristic */
 
 @layer base {
   :root {
-    /* Deep space backgrounds */
-    --background: 221 39% 11%;
-    --foreground: 210 40% 98%;
+    /* Clean neutral backgrounds */
+    --background: 0 0% 100%;
+    --foreground: 0 0% 9%;
 
-    /* Card surfaces with cosmic glow */
-    --card: 221 39% 11%;
-    --card-foreground: 210 40% 98%;
+    /* Subtle card surfaces */
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 9%;
 
     /* Popover elements */
-    --popover: 221 39% 11%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 9%;
 
-    /* Primary cosmic blue */
-    --primary: 217 91% 60%;
-    --primary-foreground: 221 39% 11%;
+    /* Primary blue accent - Apple-style */
+    --primary: 212 100% 50%;
+    --primary-foreground: 0 0% 100%;
 
-    /* Secondary nebula purple */
-    --secondary: 263 70% 50%;
-    --secondary-foreground: 210 40% 98%;
+    /* Secondary subtle gray */
+    --secondary: 0 0% 96%;
+    --secondary-foreground: 0 0% 9%;
 
-    /* Muted space gray */
-    --muted: 215 25% 27%;
-    --muted-foreground: 217 10% 64%;
+    /* Muted grays */
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 45%;
 
-    /* Accent cosmic cyan */
-    --accent: 189 85% 60%;
-    --accent-foreground: 221 39% 11%;
+    /* Accent blue */
+    --accent: 212 100% 50%;
+    --accent-foreground: 0 0% 100%;
 
-    /* Destructive red for warnings */
+    /* Destructive red */
     --destructive: 0 84% 60%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 100%;
 
-    /* Borders and inputs */
-    --border: 215 25% 27%;
-    --input: 215 25% 27%;
-    --ring: 217 91% 60%;
+    /* Minimal borders */
+    --border: 0 0% 90%;
+    --input: 0 0% 90%;
+    --ring: 212 100% 50%;
 
-    --radius: 0.75rem;
+    --radius: 12px;
 
-    /* Custom cosmic gradients */
-    --gradient-cosmic: linear-gradient(135deg, hsl(217 91% 60%) 0%, hsl(263 70% 50%) 50%, hsl(189 85% 60%) 100%);
-    --gradient-nebula: linear-gradient(180deg, hsl(263 70% 50% / 0.3) 0%, hsl(221 39% 11%) 100%);
-    --gradient-starfield: radial-gradient(ellipse at center, hsl(217 91% 60% / 0.1) 0%, hsl(221 39% 11%) 70%);
+    /* Apple-style gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(212 100% 50%) 0%, hsl(212 100% 45%) 100%);
+    --gradient-glass: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.05) 100%);
+    --gradient-hero: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.02) 100%);
     
-    /* Cosmic shadows and glows */
-    --shadow-cosmic: 0 25px 50px -12px hsl(217 91% 60% / 0.25);
-    --shadow-nebula: 0 10px 40px -10px hsl(263 70% 50% / 0.4);
-    --glow-accent: 0 0 20px hsl(189 85% 60% / 0.5);
+    /* Clean shadows */
+    --shadow-minimal: 0 1px 3px rgba(0, 0, 0, 0.05);
+    --shadow-card: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    --shadow-button: 0 1px 2px rgba(0, 0, 0, 0.05);
     
-    /* Animation variables */
-    --transition-cosmic: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    /* Smooth transitions */
+    --transition-smooth: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
-  /* Single theme - always dark for space effect */
   .dark {
-    /* Inherit the same cosmic theme */
-    --background: 221 39% 11%;
-    --foreground: 210 40% 98%;
-    --card: 221 39% 11%;
-    --card-foreground: 210 40% 98%;
-    --popover: 221 39% 11%;
-    --popover-foreground: 210 40% 98%;
-    --primary: 217 91% 60%;
-    --primary-foreground: 221 39% 11%;
-    --secondary: 263 70% 50%;
-    --secondary-foreground: 210 40% 98%;
-    --muted: 215 25% 27%;
-    --muted-foreground: 217 10% 64%;
-    --accent: 189 85% 60%;
-    --accent-foreground: 221 39% 11%;
+    /* Dark mode with Apple-style grays */
+    --background: 0 0% 8%;
+    --foreground: 0 0% 95%;
+    --card: 0 0% 10%;
+    --card-foreground: 0 0% 95%;
+    --popover: 0 0% 10%;
+    --popover-foreground: 0 0% 95%;
+    --primary: 212 100% 50%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 0 0% 12%;
+    --secondary-foreground: 0 0% 95%;
+    --muted: 0 0% 12%;
+    --muted-foreground: 0 0% 65%;
+    --accent: 212 100% 50%;
+    --accent-foreground: 0 0% 100%;
     --destructive: 0 84% 60%;
-    --destructive-foreground: 210 40% 98%;
-    --border: 215 25% 27%;
-    --input: 215 25% 27%;
-    --ring: 217 91% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 0 0% 15%;
+    --input: 0 0% 15%;
+    --ring: 212 100% 50%;
   }
 }
 
@@ -90,94 +89,87 @@
   }
 
   body {
-    @apply bg-background text-foreground;
-    background: var(--gradient-starfield);
+    @apply bg-background text-foreground font-inter;
+    background: var(--gradient-hero);
     min-height: 100vh;
+    font-feature-settings: "cv11", "ss01";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 
-  /* Cosmic animations */
+  /* Apple-style animations */
   @keyframes float {
     0%, 100% { transform: translateY(0px); }
-    50% { transform: translateY(-10px); }
+    50% { transform: translateY(-8px); }
   }
   
-  @keyframes pulse-glow {
-    0%, 100% { box-shadow: var(--glow-accent); }
-    50% { box-shadow: 0 0 30px hsl(189 85% 60% / 0.8); }
-  }
-  
-  @keyframes cosmic-spin {
-    from { transform: rotate(0deg); }
-    to { transform: rotate(360deg); }
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
 
-  /* Starfield background effect */
-  .starfield {
-    position: relative;
-    overflow: hidden;
-  }
-  
-  .starfield::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: 
-      radial-gradient(2px 2px at 20px 30px, #fff, transparent),
-      radial-gradient(2px 2px at 40px 70px, #fff, transparent),
-      radial-gradient(1px 1px at 90px 40px, #fff, transparent),
-      radial-gradient(1px 1px at 130px 80px, #fff, transparent),
-      radial-gradient(2px 2px at 160px 30px, #fff, transparent);
-    background-repeat: repeat;
-    background-size: 200px 100px;
-    animation: cosmic-spin 240s linear infinite;
-    opacity: 0.3;
-    pointer-events: none;
+  @keyframes scale-in {
+    0% {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
   }
 }
 
 @layer components {
-  /* Custom shadow utilities */
-  .shadow-cosmic {
-    box-shadow: var(--shadow-cosmic);
+  /* Apple-style button */
+  .btn-primary {
+    @apply bg-primary text-primary-foreground font-medium px-6 py-3 rounded-xl
+           hover:bg-primary/90 active:scale-95 transition-all duration-200;
+    box-shadow: var(--shadow-button);
   }
   
-  .shadow-nebula {
-    box-shadow: var(--shadow-nebula);
+  /* Glass card effect */
+  .card-glass {
+    @apply bg-white/80 backdrop-blur-xl border border-white/20 rounded-2xl;
+    box-shadow: var(--shadow-card);
   }
   
-  .glow-accent {
-    box-shadow: var(--glow-accent);
-  }
-
-  /* Hero button variant */
-  .btn-cosmic {
-    @apply bg-gradient-to-r from-primary to-accent text-primary-foreground 
-           font-semibold px-8 py-4 rounded-xl 
-           hover:scale-105 active:scale-95;
-    box-shadow: var(--shadow-cosmic);
-    transition: var(--transition-cosmic);
+  .dark .card-glass {
+    @apply bg-white/5 border-white/10;
   }
   
-  .btn-cosmic:hover {
-    box-shadow: var(--shadow-nebula);
+  /* Minimal card */
+  .card-minimal {
+    @apply bg-card border border-border/50 rounded-2xl p-8 transition-all duration-200;
+    box-shadow: var(--shadow-minimal);
   }
   
-  /* Card with cosmic glow */
-  .card-cosmic {
-    @apply bg-card/90 backdrop-blur-sm border border-border/50 
-           rounded-2xl p-6 transition-all duration-300;
-    box-shadow: var(--shadow-cosmic);
+  .card-minimal:hover {
+    box-shadow: var(--shadow-card);
+    @apply border-border;
   }
   
-  .card-cosmic:hover {
-    box-shadow: var(--shadow-cosmic);
+  /* Clean section spacing */
+  .section-padding {
+    @apply py-24 md:py-32;
   }
   
-  /* Text glow effect */
-  .text-glow {
-    text-shadow: 0 0 10px hsl(var(--accent) / 0.5);
+  /* Typography styles */
+  .text-display {
+    @apply text-5xl md:text-7xl font-bold tracking-tight;
+  }
+  
+  .text-large {
+    @apply text-xl md:text-2xl font-medium;
+  }
+  
+  .text-body {
+    @apply text-base leading-relaxed;
   }
 }

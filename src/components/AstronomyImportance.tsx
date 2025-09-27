@@ -27,45 +27,42 @@ const WhySpecial = () => {
   ];
 
   return (
-    <section className="py-20 relative">
+    <section className="section-padding bg-secondary/20">
       <div className="container mx-auto px-6">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div>
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-glow">
+            <h2 className="text-4xl md:text-6xl font-bold mb-8 tracking-tight">
               Why Our Sessions Are{" "}
-              <span className="bg-gradient-to-r from-secondary to-accent bg-clip-text text-transparent">
+              <span className="text-primary">
                 Special
               </span>
             </h2>
             
-            <p className="text-lg text-muted-foreground mb-8">
+            <p className="text-large text-muted-foreground mb-12">
               Unlike YouTube videos or documentaries, our live sessions offer direct access to working astronomers. 
               Get your questions answered, explore the latest discoveries, and join a community of passionate space enthusiasts.
             </p>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 gap-8">
               {features.map((feature, index) => (
-                <Card key={index} className="card-cosmic animate-fade-in" style={{ animationDelay: `${index * 0.1}s` }}>
-                  <CardHeader className="pb-3">
-                    <div className="flex items-center gap-3">
-                      {feature.icon}
-                      <CardTitle className="text-lg">{feature.title}</CardTitle>
-                    </div>
-                  </CardHeader>
-                  <CardContent>
-                    <p className="text-muted-foreground text-sm">{feature.description}</p>
-                  </CardContent>
-                </Card>
+                <div key={index} className="flex items-start gap-4 animate-fade-in" style={{ animationDelay: `${index * 100}ms` }}>
+                  <div className="p-3 bg-primary/10 rounded-2xl flex-shrink-0">
+                    {feature.icon}
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
+                    <p className="text-body text-muted-foreground">{feature.description}</p>
+                  </div>
+                </div>
               ))}
             </div>
           </div>
           
           <div className="relative">
-            <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-accent/20 rounded-3xl blur-xl"></div>
             <img 
               src={astronomyImage} 
-              alt="Beautiful nebula showing the wonders of space"
-              className="relative rounded-3xl shadow-cosmic w-full h-auto animate-float"
+              alt="Professional astronomer working with advanced telescope equipment"
+              className="rounded-3xl shadow-card w-full h-auto animate-fade-in"
             />
           </div>
         </div>

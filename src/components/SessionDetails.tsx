@@ -43,43 +43,43 @@ const SessionDetails = () => {
   ];
 
   return (
-    <section className="py-20 relative">
+    <section className="section-padding">
       <div className="container mx-auto px-6">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-glow">
+        <div className="text-center mb-20">
+          <h2 className="text-4xl md:text-6xl font-bold mb-6 tracking-tight">
             Session{" "}
-            <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+            <span className="text-primary">
               Details
             </span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-large text-muted-foreground max-w-3xl mx-auto">
             Everything you need to know about our live astronomy sessions. 
             Professional presentations followed by interactive Q&A with real astronomers.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
           {details.map((detail, index) => (
-            <Card key={index} className="card-cosmic animate-fade-in" style={{ animationDelay: `${index * 0.1}s` }}>
-              <CardHeader className="pb-3">
-                <div className="flex items-center gap-3 mb-2">
+            <Card key={index} className="card-minimal animate-fade-in" style={{ animationDelay: `${index * 100}ms` }}>
+              <div className="flex items-start gap-4 mb-6">
+                <div className="p-3 bg-primary/10 rounded-2xl">
                   {detail.icon}
-                  <CardTitle className="text-xl">{detail.title}</CardTitle>
                 </div>
-              </CardHeader>
-              <CardContent>
-                <p className="text-lg font-semibold text-foreground mb-2">{detail.description}</p>
-                <p className="text-muted-foreground text-sm">{detail.detail}</p>
-              </CardContent>
+                <div>
+                  <h3 className="text-xl font-semibold mb-2">{detail.title}</h3>
+                  <p className="text-lg font-medium text-foreground mb-1">{detail.description}</p>
+                  <p className="text-body text-muted-foreground">{detail.detail}</p>
+                </div>
+              </div>
             </Card>
           ))}
         </div>
 
         <div className="text-center">
-          <Button className="btn-cosmic text-lg px-8 py-4 mr-4">
+          <Button className="btn-primary text-base px-8 py-4 h-auto mr-4">
             Book Your First Session
           </Button>
-          <Button variant="outline" className="border-primary/50 text-foreground hover:bg-primary/10 text-lg px-8 py-4">
+          <Button variant="outline" className="text-base px-8 py-4 h-auto border-muted-foreground/20 hover:border-primary/30">
             View Schedule
           </Button>
         </div>

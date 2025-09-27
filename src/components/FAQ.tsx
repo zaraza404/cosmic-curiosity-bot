@@ -44,17 +44,17 @@ const FAQ = () => {
   ];
 
   return (
-    <section className="py-20 relative">
+    <section className="section-padding">
       <div className="container mx-auto px-6">
-        <div className="text-center mb-16">
+        <div className="text-center mb-20">
           <HelpCircle className="w-16 h-16 text-primary mx-auto mb-6 animate-float" />
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-glow">
+          <h2 className="text-4xl md:text-6xl font-bold mb-6 tracking-tight">
             Frequently Asked{" "}
-            <span className="bg-gradient-to-r from-secondary to-accent bg-clip-text text-transparent">
+            <span className="text-primary">
               Questions
             </span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-large text-muted-foreground max-w-3xl mx-auto">
             Everything you need to know about joining our live astronomy sessions with professional astronomers.
           </p>
         </div>
@@ -65,12 +65,12 @@ const FAQ = () => {
               <AccordionItem 
                 key={index} 
                 value={`item-${index}`}
-                className="card-cosmic border-0 rounded-2xl overflow-hidden"
+                className="card-minimal border-0 rounded-2xl overflow-hidden"
               >
-                <AccordionTrigger className="px-6 py-4 text-left hover:no-underline">
+                <AccordionTrigger className="px-8 py-6 text-left hover:no-underline">
                   <span className="text-lg font-semibold">{faq.question}</span>
                 </AccordionTrigger>
-                <AccordionContent className="px-6 pb-6 text-muted-foreground leading-relaxed">
+                <AccordionContent className="px-8 pb-6 text-body text-muted-foreground leading-relaxed">
                   {faq.answer}
                 </AccordionContent>
               </AccordionItem>
@@ -78,11 +78,11 @@ const FAQ = () => {
           </Accordion>
         </div>
 
-        <div className="text-center mt-12">
-          <p className="text-muted-foreground mb-6">
+        <div className="text-center mt-16">
+          <p className="text-body text-muted-foreground mb-6">
             Still have questions? Our team is here to help!
           </p>
-          <Button className="btn-cosmic">
+          <Button className="btn-primary">
             Contact Support
           </Button>
         </div>

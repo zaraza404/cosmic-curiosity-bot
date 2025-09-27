@@ -20,26 +20,24 @@ const CallToAction = () => {
   };
 
   return (
-    <section className="py-20 relative">
-      <div className="absolute inset-0 bg-gradient-to-r from-primary/10 via-secondary/10 to-accent/10"></div>
-      
-      <div className="container mx-auto px-6 relative z-10">
+    <section className="section-padding bg-secondary/20">
+      <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto text-center">
-          <div className="mb-8">
+          <div className="mb-12">
             <Rocket className="w-16 h-16 text-primary mx-auto mb-6 animate-float" />
-            <h2 className="text-4xl md:text-6xl font-bold mb-6 text-glow">
+            <h2 className="text-4xl md:text-6xl font-bold mb-6 tracking-tight">
               Ready to{" "}
-              <span className="bg-gradient-to-r from-accent to-primary bg-clip-text text-transparent">
+              <span className="text-primary">
                 Book?
               </span>
             </h2>
-            <p className="text-xl md:text-2xl text-muted-foreground mb-8">
+            <p className="text-large text-muted-foreground mb-8">
               Join your first live session with a professional astronomer. Ask questions, explore the cosmos, 
               and connect with fellow space enthusiasts in an intimate, interactive setting.
             </p>
           </div>
 
-          <form onSubmit={handleSubmit} className="max-w-md mx-auto mb-8">
+          <form onSubmit={handleSubmit} className="max-w-md mx-auto mb-12">
             <div className="flex gap-3">
               <div className="flex-1 relative">
                 <Mail className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-muted-foreground" />
@@ -48,27 +46,27 @@ const CallToAction = () => {
                   placeholder="Enter your email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  className="pl-10 bg-card/50 border-border/50 focus:border-primary"
+                  className="pl-10 bg-background border-border h-12 rounded-xl"
                   required
                 />
               </div>
-              <Button type="submit" className="btn-cosmic px-8">
+              <Button type="submit" className="btn-primary px-6 h-12">
                 Get Updates
               </Button>
             </div>
           </form>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Button className="btn-cosmic px-8 py-3">
+            <Button className="btn-primary px-8 py-4 h-auto">
               Book Your First Session
             </Button>
-            <Button variant="outline" className="border-secondary/50 text-foreground hover:bg-secondary/10 px-8 py-3">
+            <Button variant="outline" className="text-base px-8 py-4 h-auto border-muted-foreground/20 hover:border-primary/30">
               Browse All Sessions
             </Button>
           </div>
 
-          <div className="mt-12 pt-8 border-t border-border/30">
-            <p className="text-muted-foreground">
+          <div className="mt-16 pt-8 border-t border-border/30">
+            <p className="text-body text-muted-foreground">
               "The cosmos is within us. We are made of star-stuff." - Carl Sagan
             </p>
           </div>
