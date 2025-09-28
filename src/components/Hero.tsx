@@ -3,7 +3,7 @@ import heroImage from "@/assets/hero-cosmic.jpg";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       <div 
         className="absolute inset-0 bg-cover bg-center opacity-20"
         style={{ backgroundImage: `url(${heroImage})` }}
@@ -11,19 +11,23 @@ const Hero = () => {
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-background/40 to-background" />
       
       <div className="relative z-10 container mx-auto px-6 text-center">
-        <h1 className="text-display mb-8 bg-gradient-to-b from-foreground to-foreground/70 bg-clip-text text-transparent animate-fade-in">
+        <p className="text-xl text-primary font-medium mb-4 animate-fade-in">
+          Welcome to Cosmos!
+        </p>
+        
+        <h1 className="text-display mb-8 bg-gradient-to-b from-foreground to-foreground/70 bg-clip-text text-transparent animate-fade-in [animation-delay:200ms]">
           Meet Real{" "}
           <span className="bg-gradient-to-r from-primary to-primary/80 bg-clip-text text-transparent">
             Astronomers
           </span>
         </h1>
         
-        <p className="text-large text-muted-foreground mb-12 max-w-3xl mx-auto animate-fade-in [animation-delay:200ms]">
+        <p className="text-large text-muted-foreground mb-12 max-w-3xl mx-auto animate-fade-in [animation-delay:400ms]">
           Join intimate live sessions with professional astronomers. Ask questions, explore fascinating space topics, 
           and get expert insights in small groups of fellow space enthusiasts.
         </p>
         
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-in [animation-delay:400ms]">
+        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-in [animation-delay:600ms]">
           <Button 
             className="btn-primary text-base px-8 py-4 h-auto"
             data-cal-link="yurii-novytskyi-xumaqz/meeting-with-an-astronomy-preofessional"
