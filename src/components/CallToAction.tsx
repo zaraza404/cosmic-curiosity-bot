@@ -57,7 +57,12 @@ const CallToAction = () => {
           </form>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Button className="btn-primary px-8 py-4 h-auto">
+            <Button 
+              className="btn-primary px-8 py-4 h-auto"
+              data-cal-link="yurii-novytskyi-xumaqz/meeting-with-an-astronomy-preofessional"
+              data-cal-namespace="meeting-with-an-astronomy-preofessional"
+              data-cal-config='{"layout":"month_view"}'
+            >
               Book Your First Session
             </Button>
             <Button variant="outline" className="text-base px-8 py-4 h-auto border-muted-foreground/20 hover:border-primary/30">

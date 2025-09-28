@@ -24,7 +24,12 @@ const Hero = () => {
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-in [animation-delay:400ms]">
-          <Button className="btn-primary text-base px-8 py-4 h-auto">
+          <Button 
+            className="btn-primary text-base px-8 py-4 h-auto"
+            data-cal-link="yurii-novytskyi-xumaqz/meeting-with-an-astronomy-preofessional"
+            data-cal-namespace="meeting-with-an-astronomy-preofessional"
+            data-cal-config='{"layout":"month_view"}'
+          >
             Book a Session
           </Button>
           

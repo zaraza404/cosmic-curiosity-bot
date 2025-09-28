@@ -66,7 +66,12 @@ const UpcomingSessions = () => {
                   <div className="flex-grow">
                     <h3 className="text-xl font-semibold mb-2">{session.title}</h3>
                     <p className="text-body text-muted-foreground mb-4">{session.description}</p>
-                    <Button className="btn-primary">
+                    <Button 
+                      className="btn-primary"
+                      data-cal-link="yurii-novytskyi-xumaqz/meeting-with-an-astronomy-preofessional"
+                      data-cal-namespace="meeting-with-an-astronomy-preofessional"
+                      data-cal-config='{"layout":"month_view"}'
+                    >
                       {session.action}
                     </Button>
                   </div>

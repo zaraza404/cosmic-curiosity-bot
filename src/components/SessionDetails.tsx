@@ -76,7 +76,12 @@ const SessionDetails = () => {
         </div>
 
         <div className="text-center">
-          <Button className="btn-primary text-base px-8 py-4 h-auto mr-4">
+          <Button 
+            className="btn-primary text-base px-8 py-4 h-auto mr-4"
+            data-cal-link="yurii-novytskyi-xumaqz/meeting-with-an-astronomy-preofessional"
+            data-cal-namespace="meeting-with-an-astronomy-preofessional"
+            data-cal-config='{"layout":"month_view"}'
+          >
             Book Your First Session
           </Button>
           <Button variant="outline" className="text-base px-8 py-4 h-auto border-muted-foreground/20 hover:border-primary/30">
