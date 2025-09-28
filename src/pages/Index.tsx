@@ -3,7 +3,6 @@ import SessionDetails from "@/components/SessionDetails";
 import WhySpecial from "@/components/AstronomyImportance";
 import UpcomingSessions from "@/components/GetInvolved";
 import Testimonials from "@/components/Testimonials";
-import FAQ from "@/components/FAQ";
 import CallToAction from "@/components/CallToAction";
 
 const Index = () => {
@@ -14,7 +13,6 @@ const Index = () => {
       <WhySpecial />
       <UpcomingSessions />
       <Testimonials />
-      <FAQ />
       <CallToAction />
     </div>
   );

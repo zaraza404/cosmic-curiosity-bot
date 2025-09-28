@@ -75,7 +75,7 @@ const RetellChatbot = () => {
       {!isOpen && (
         <Button
           onClick={toggleChat}
-          className="fixed bottom-6 right-6 w-16 h-16 rounded-full shadow-cosmic hover:shadow-nebula bg-gradient-to-r from-primary to-accent hover:scale-110 transition-all duration-300 z-50"
+          className="fixed bottom-6 right-6 w-16 h-16 rounded-full bg-primary hover:bg-primary/90 hover:scale-110 transition-all duration-300 z-50 shadow-lg"
           aria-label="Open chat assistant"
         >
           <MessageCircle className="w-6 h-6" />
@@ -85,14 +85,14 @@ const RetellChatbot = () => {
       {/* Chat Interface */}
       {isOpen && (
         <div 
-          className={`fixed bottom-6 right-6 w-96 bg-card/95 backdrop-blur-sm border border-border/50 rounded-2xl shadow-cosmic transition-all duration-300 z-50 ${
+          className={`fixed bottom-6 right-6 w-96 bg-card/95 backdrop-blur-sm border border-border/50 rounded-2xl shadow-lg transition-all duration-300 z-50 ${
             isMinimized ? "h-16" : "h-96"
           }`}
         >
           {/* Header */}
           <div className="flex items-center justify-between p-4 border-b border-border/30">
             <div className="flex items-center gap-3">
-              <div className="w-8 h-8 rounded-full bg-gradient-to-r from-primary to-accent flex items-center justify-center">
+              <div className="w-8 h-8 rounded-full bg-primary flex items-center justify-center">
                 <MessageCircle className="w-4 h-4 text-primary-foreground" />
               </div>
               <div>
@@ -146,7 +146,7 @@ const RetellChatbot = () => {
               {retellClient && (
                 <div className="flex items-center justify-center h-full">
                   <div className="text-center">
-                    <div className="animate-pulse-glow w-16 h-16 bg-gradient-to-r from-primary to-accent rounded-full mx-auto mb-4 flex items-center justify-center">
+                    <div className="animate-pulse-glow w-16 h-16 bg-primary rounded-full mx-auto mb-4 flex items-center justify-center">
                       <MessageCircle className="w-8 h-8 text-primary-foreground" />
                     </div>
                     <p className="text-sm font-semibold mb-1">Voice chat active</p>
