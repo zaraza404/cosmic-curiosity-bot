@@ -6,80 +6,80 @@
 
 @layer base {
   :root {
-    /* Clean neutral backgrounds */
-    --background: 0 0% 100%;
-    --foreground: 0 0% 9%;
+    /* Darker professional backgrounds */
+    --background: 220 15% 8%;
+    --foreground: 0 0% 95%;
 
-    /* Subtle card surfaces */
-    --card: 0 0% 100%;
-    --card-foreground: 0 0% 9%;
+    /* Professional card surfaces */
+    --card: 220 15% 12%;
+    --card-foreground: 0 0% 95%;
 
     /* Popover elements */
-    --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 9%;
+    --popover: 220 15% 12%;
+    --popover-foreground: 0 0% 95%;
 
-    /* Primary blue accent - Apple-style */
-    --primary: 212 100% 50%;
+    /* Inspiring orange primary */
+    --primary: 25 95% 53%;
     --primary-foreground: 0 0% 100%;
 
-    /* Secondary subtle gray */
-    --secondary: 0 0% 96%;
-    --secondary-foreground: 0 0% 9%;
+    /* Secondary warm gray */
+    --secondary: 220 15% 18%;
+    --secondary-foreground: 0 0% 95%;
 
-    /* Muted grays */
-    --muted: 0 0% 96%;
-    --muted-foreground: 0 0% 45%;
+    /* Muted grays with better contrast */
+    --muted: 220 15% 16%;
+    --muted-foreground: 0 0% 70%;
 
-    /* Accent blue */
-    --accent: 212 100% 50%;
+    /* Accent orange variations */
+    --accent: 25 95% 53%;
     --accent-foreground: 0 0% 100%;
 
     /* Destructive red */
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    /* Minimal borders */
-    --border: 0 0% 90%;
-    --input: 0 0% 90%;
-    --ring: 212 100% 50%;
+    /* Professional borders */
+    --border: 220 15% 20%;
+    --input: 220 15% 20%;
+    --ring: 25 95% 53%;
 
     --radius: 12px;
 
-    /* Apple-style gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(212 100% 50%) 0%, hsl(212 100% 45%) 100%);
-    --gradient-glass: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.05) 100%);
-    --gradient-hero: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.02) 100%);
+    /* Professional gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(25 95% 53%) 0%, hsl(25 95% 48%) 100%);
+    --gradient-glass: linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.02) 100%);
+    --gradient-hero: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 100%);
     
-    /* Clean shadows */
-    --shadow-minimal: 0 1px 3px rgba(0, 0, 0, 0.05);
-    --shadow-card: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-    --shadow-button: 0 1px 2px rgba(0, 0, 0, 0.05);
+    /* Professional shadows */
+    --shadow-minimal: 0 1px 3px rgba(0, 0, 0, 0.3);
+    --shadow-card: 0 4px 12px -2px rgba(0, 0, 0, 0.25), 0 2px 8px -2px rgba(0, 0, 0, 0.15);
+    --shadow-button: 0 2px 4px rgba(0, 0, 0, 0.2);
     
     /* Smooth transitions */
     --transition-smooth: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .dark {
-    /* Dark mode with Apple-style grays */
-    --background: 0 0% 8%;
-    --foreground: 0 0% 95%;
-    --card: 0 0% 10%;
-    --card-foreground: 0 0% 95%;
-    --popover: 0 0% 10%;
-    --popover-foreground: 0 0% 95%;
-    --primary: 212 100% 50%;
+    /* Enhanced dark mode */
+    --background: 220 15% 5%;
+    --foreground: 0 0% 98%;
+    --card: 220 15% 8%;
+    --card-foreground: 0 0% 98%;
+    --popover: 220 15% 8%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 25 95% 53%;
     --primary-foreground: 0 0% 100%;
-    --secondary: 0 0% 12%;
-    --secondary-foreground: 0 0% 95%;
-    --muted: 0 0% 12%;
-    --muted-foreground: 0 0% 65%;
-    --accent: 212 100% 50%;
+    --secondary: 220 15% 12%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 220 15% 10%;
+    --muted-foreground: 0 0% 80%;
+    --accent: 25 95% 53%;
     --accent-foreground: 0 0% 100%;
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
-    --border: 0 0% 15%;
-    --input: 0 0% 15%;
-    --ring: 212 100% 50%;
+    --border: 220 15% 18%;
+    --input: 220 15% 18%;
+    --ring: 25 95% 53%;
   }
 }
 

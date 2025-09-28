@@ -11,13 +11,13 @@ const SessionDetails = () => {
       detail: "Perfect length for deep dives into fascinating topics"
     },
     {
-      icon: <Users className="w-8 h-8 text-secondary" />,
+      icon: <Users className="w-8 h-8 text-primary" />,
       title: "Group Size",
       description: "8-12 participants max",
       detail: "Small groups ensure personalized attention"
     },
     {
-      icon: <DollarSign className="w-8 h-8 text-accent" />,
+      icon: <DollarSign className="w-8 h-8 text-primary" />,
       title: "Price",
       description: "$45 per session",
       detail: "Incredible value for expert knowledge"
@@ -29,13 +29,13 @@ const SessionDetails = () => {
       detail: "Join from anywhere with stable internet"
     },
     {
-      icon: <Calendar className="w-8 h-8 text-secondary" />,
+      icon: <Calendar className="w-8 h-8 text-primary" />,
       title: "Schedule",
       description: "Multiple times weekly",
       detail: "Find sessions that fit your timezone"
     },
     {
-      icon: <Star className="w-8 h-8 text-accent" />,
+      icon: <Star className="w-8 h-8 text-primary" />,
       title: "What's Included",
       description: "Presentation + Q&A",
       detail: "Expert insights plus your questions answered"
