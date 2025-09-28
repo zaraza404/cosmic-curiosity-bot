@@ -3,7 +3,7 @@ import heroImage from "@/assets/hero-cosmic.jpg";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
       <div 
         className="absolute inset-0 bg-cover bg-center opacity-20"
         style={{ backgroundImage: `url(${heroImage})` }}

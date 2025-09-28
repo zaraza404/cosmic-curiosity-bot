@@ -1,3 +1,4 @@
+import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import SessionDetails from "@/components/SessionDetails";
 import WhySpecial from "@/components/AstronomyImportance";
@@ -8,6 +9,7 @@ import CallToAction from "@/components/CallToAction";
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
+      <Header />
       <Hero />
       <SessionDetails />
       <WhySpecial />
