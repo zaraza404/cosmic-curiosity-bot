@@ -6,39 +6,39 @@ const SessionDetails = () => {
   const details = [
     {
       icon: <Clock className="w-8 h-8 text-primary" />,
-      title: "Duration",
-      description: "1-2 hours per session",
-      detail: "Perfect length for deep dives into fascinating topics"
+      title: "Live Online Sessions",
+      description: "One-on-One & Group Presentations",
+      detail: "Personal virtual telescope tours, educational talks, and interactive Q&A sessions"
     },
     {
       icon: <Users className="w-8 h-8 text-primary" />,
-      title: "Group Size",
-      description: "8-12 participants max",
-      detail: "Small groups ensure personalized attention"
-    },
-    {
-      icon: <DollarSign className="w-8 h-8 text-primary" />,
-      title: "Price",
-      description: "$45 per session",
-      detail: "Incredible value for expert knowledge"
+      title: "Educational Packages",
+      description: "Schools & Corporate Events",
+      detail: "Tailored programs for classrooms, team building, and special celebrations"
     },
     {
       icon: <Video className="w-8 h-8 text-primary" />,
-      title: "Format",
-      description: "Live online meetings",
-      detail: "Join from anywhere with stable internet"
-    },
-    {
-      icon: <Calendar className="w-8 h-8 text-primary" />,
-      title: "Schedule",
-      description: "Multiple times weekly",
-      detail: "Find sessions that fit your timezone"
+      title: "Specialized Sessions",
+      description: "Astrophotography & Equipment",
+      detail: "Expert consultations on telescope buying, photography techniques, and deep space tours"
     },
     {
       icon: <Star className="w-8 h-8 text-primary" />,
-      title: "What's Included",
-      description: "Presentation + Q&A",
-      detail: "Expert insights plus your questions answered"
+      title: "Premium Experiences",
+      description: "Special Events & Memberships",
+      detail: "Live meteor showers, eclipse parties, monthly astronomy club, and mission updates"
+    },
+    {
+      icon: <Calendar className="w-8 h-8 text-primary" />,
+      title: "Special Interest Topics",
+      description: "Advanced Astronomy",
+      detail: "Cosmology, exoplanets, black holes, and the history of astronomical discovery"
+    },
+    {
+      icon: <DollarSign className="w-8 h-8 text-primary" />,
+      title: "Add-On Services",
+      description: "Enhance Your Experience",
+      detail: "Session recordings, custom star charts, extended Q&A, and materials packs"
     }
   ];
 
@@ -47,14 +47,14 @@ const SessionDetails = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-20">
           <h2 className="text-4xl md:text-6xl font-bold mb-6 tracking-tight">
-            Session{" "}
+            Our{" "}
             <span className="text-primary">
-              Details
+              Services
             </span>
           </h2>
           <p className="text-large text-muted-foreground max-w-3xl mx-auto">
-            Everything you need to know about our live astronomy sessions. 
-            Professional presentations followed by interactive Q&A with real astronomers.
+            From intimate one-on-one sessions to group events, educational programs, and premium experiences. 
+            We offer comprehensive astronomy services tailored to your interests and needs.
           </p>
         </div>
 
@@ -76,16 +76,14 @@ const SessionDetails = () => {
         </div>
 
         <div className="text-center">
+          <p className="text-large text-muted-foreground mb-8">
+            Ready to explore the cosmos? Request a personalized proposal for your astronomy experience.
+          </p>
           <Button 
-            className="btn-primary text-base px-8 py-4 h-auto mr-4"
-            data-cal-link="yurii-novytskyi-xumaqz/meeting-with-an-astronomy-preofessional"
-            data-cal-namespace="meeting-with-an-astronomy-preofessional"
-            data-cal-config='{"layout":"month_view"}'
+            className="btn-primary text-base px-8 py-4 h-auto"
+            onClick={() => document.querySelector('#proposal-form')?.scrollIntoView({ behavior: 'smooth' })}
           >
-            Book Your First Session
-          </Button>
-          <Button variant="outline" className="text-base px-8 py-4 h-auto border-muted-foreground/20 hover:border-primary/30">
-            View Schedule
+            Request a Proposal
           </Button>
         </div>
       </div>

@@ -7,27 +7,27 @@ const UpcomingSessions = () => {
   const sessions = [
     {
       icon: <Eye className="w-8 h-8 text-primary" />,
-      title: "Black Holes Unveiled",
-      description: "Explore the mysterious nature of black holes, recent discoveries from the Event Horizon Telescope, and what happens at the event horizon.",
-      action: "Book Session - Nov 15"
+      title: "Private Constellation Tours",
+      description: "Personalized virtual telescope tours exploring your favorite constellations and deep space objects with an expert astronomer.",
+      action: "Request Proposal"
     },
     {
-      icon: <Users className="w-8 h-8 text-secondary" />,
-      title: "Mars Exploration",
-      description: "Join a NASA Mars scientist to discuss Perseverance rover findings, future missions, and the search for ancient life.",
-      action: "Book Session - Nov 18"
+      icon: <Users className="w-8 h-8 text-primary" />,
+      title: "Astrophotography Mastery",
+      description: "One-on-one consultations on camera settings, post-processing techniques, and capturing stunning images of the night sky.",
+      action: "Request Proposal"
     },
     {
-      icon: <GraduationCap className="w-8 h-8 text-accent" />,
-      title: "Exoplanet Hunters",
-      description: "Discover how astronomers find planets around other stars and learn about potentially habitable worlds.",
-      action: "Book Session - Nov 22"
+      icon: <GraduationCap className="w-8 h-8 text-primary" />,
+      title: "Educational Programs",
+      description: "Comprehensive astronomy packages for schools, including interactive presentations, Q&A sessions, and custom curriculum integration.",
+      action: "Request Proposal"
     },
     {
       icon: <Calendar className="w-8 h-8 text-primary" />,
-      title: "James Webb Discoveries",
-      description: "See the latest stunning images and groundbreaking discoveries from humanity's most powerful space telescope.",
-      action: "Book Session - Nov 25"
+      title: "Monthly Astronomy Club",
+      description: "Join our exclusive membership for monthly live sessions, special events, early access to meteor shower parties, and priority booking.",
+      action: "Request Proposal"
     }
   ];
 
@@ -36,14 +36,14 @@ const UpcomingSessions = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-20">
           <h2 className="text-4xl md:text-6xl font-bold mb-6 tracking-tight">
-            Upcoming{" "}
+            Popular{" "}
             <span className="text-primary">
-              Sessions
+              Experiences
             </span>
           </h2>
           <p className="text-large text-muted-foreground max-w-3xl mx-auto">
-            Join our expert astronomers for fascinating deep-dives into the most exciting topics in space science. 
-            Each session features a presentation followed by live Q&A.
+            Discover our most requested astronomy services. From personalized stargazing tours to educational programs 
+            and monthly memberships, we create cosmic experiences tailored to your interests.
           </p>
         </div>
 
@@ -68,9 +68,7 @@ const UpcomingSessions = () => {
                     <p className="text-body text-muted-foreground mb-4">{session.description}</p>
                     <Button 
                       className="btn-primary"
-                      data-cal-link="yurii-novytskyi-xumaqz/meeting-with-an-astronomy-preofessional"
-                      data-cal-namespace="meeting-with-an-astronomy-preofessional"
-                      data-cal-config='{"layout":"month_view"}'
+                      onClick={() => document.querySelector('#proposal-form')?.scrollIntoView({ behavior: 'smooth' })}
                     >
                       {session.action}
                     </Button>

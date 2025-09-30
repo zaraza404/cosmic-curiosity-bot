@@ -3,7 +3,7 @@ import SessionDetails from "@/components/SessionDetails";
 import WhySpecial from "@/components/AstronomyImportance";
 import UpcomingSessions from "@/components/GetInvolved";
 import Testimonials from "@/components/Testimonials";
-import CallToAction from "@/components/CallToAction";
+import ProposalForm from "@/components/ProposalForm";
 
 const Index = () => {
   return (
@@ -13,7 +13,7 @@ const Index = () => {
       <WhySpecial />
       <UpcomingSessions />
       <Testimonials />
-      <CallToAction />
+      <ProposalForm />
     </div>
   );
 };
