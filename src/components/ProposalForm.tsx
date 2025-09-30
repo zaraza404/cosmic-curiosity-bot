@@ -191,7 +191,7 @@ const ProposalForm = () => {
   };
 
   return (
-    <section id="proposal-form" className="section-padding bg-secondary/20">
+    <section id="proposal-form" className="section-padding bg-background">
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto">
           {/* Header */}
