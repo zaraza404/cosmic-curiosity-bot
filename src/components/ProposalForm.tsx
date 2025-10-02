@@ -9,8 +9,8 @@ import { useToast } from "@/hooks/use-toast";
 import { Sparkles, User, Mail, Phone, Users } from "lucide-react";
 
 // Lindy.ai webhook URL for proposal requests
-const WEBHOOK_URL = "https://public.lindy.ai/api/v1/webhooks/lindy/c0679b7d-bc47-4461-9977-838aa2b4699b";
-const WEBHOOK_AUTH_TOKEN = "c4615bfa34a1c40961d7daa5998d6560dfda68bc6d03698a0a94e2b4e63b458e";
+const WEBHOOK_URL = "https://public.lindy.ai/api/v1/webhooks/lindy/db45b21d-61bf-4035-b9cc-79f2546d6e43";
+const WEBHOOK_AUTH_TOKEN = "af2e7ec438c7f9ab31df2a75ed7f333544cbe106cab03c2d5344bf80fa6ed19f";
 
 const ProposalForm = () => {
   const { toast } = useToast();
