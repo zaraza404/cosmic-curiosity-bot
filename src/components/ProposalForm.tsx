@@ -8,8 +8,9 @@ import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
 import { Sparkles, User, Mail, Phone, Users } from "lucide-react";
 
-// ⚠️ REPLACE THIS WITH YOUR MAKE.COM OR LINDY.AI WEBHOOK URL
-const WEBHOOK_URL = "https://your-webhook-url-here.com/webhook";
+// Lindy.ai webhook URL for proposal requests
+const WEBHOOK_URL = "https://public.lindy.ai/api/v1/webhooks/lindy/c0679b7d-bc47-4461-9977-838aa2b4699b";
+const WEBHOOK_AUTH_TOKEN = "c4615bfa34a1c40961d7daa5998d6560dfda68bc6d03698a0a94e2b4e63b458e";
 
 const ProposalForm = () => {
   const { toast } = useToast();
@@ -61,6 +62,7 @@ const ProposalForm = () => {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
+          "Authorization": `Bearer ${WEBHOOK_AUTH_TOKEN}`,
         },
         body: JSON.stringify(payload),
       });
@@ -70,8 +72,8 @@ const ProposalForm = () => {
       }
 
       toast({
-        title: "✨ Thank you! Your proposal request has been received.",
-        description: "We'll send you a customized astronomy session proposal within 24 hours.",
+        title: "✅ Thank you! Your proposal request has been sent.",
+        description: "Please check your email.",
       });
 
       // Reset form
